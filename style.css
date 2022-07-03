@@ -17,6 +17,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    min-width: 100vw;
     padding: 10px;
     border-bottom: 1px solid #64646421;
     font-family: var(--fonte01);
@@ -35,6 +36,7 @@ nav > a{
     padding: 5px;
     text-decoration: none;
     transition: 0.4s;
+    
 }
 
 nav > a:hover{
