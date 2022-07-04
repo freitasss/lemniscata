@@ -55,15 +55,10 @@ nav {
     font: italic 30px var(--fonte01);
     height: 350px;
     width: 100%;
-    background: linear-gradient(45deg, #F2F2F2, #D9D9D9, #A6A6A6);
+    background: linear-gradient(45deg, #fff, #F2F2F2, #D9D9D9, #A6A6A6);
     background-size: 300% 300%;
     animation: colors 10s ease infinite;
     box-shadow: inset 2px 2px 10px 0px rgba(0, 0, 0, 0.123);
-}
-
-.back-02{
-    background-color: #0d0d0d;
-    height: 10vh;
 }
 
 @keyframes colors{ 
@@ -86,9 +81,9 @@ nav {
 
 .header{   /* Letras do primeiro back */
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
     font-family: var(--fonte01);
     color: #0d0d0d;
     text-align: center;
