@@ -1,225 +1,54 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap');
-
-:root{
-    --fonte01:'Playfair Display', serif;
-}
-
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}  
+}
 
-a {
-    font-family: var(--fonte01);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    transition: 0.3s;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
-  
-a:hover {
-    
-    opacity: 0.7;
-    text-decoration: underline;
-    
-    border-radius: 3px;
+
+#burguer{
+    display: none;
 }
-  
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: #ffffff;
+
+.logo{
     height: 12vh;
 }
 
-  
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-  
-.nav-list li {
-    letter-spacing: 2px;
-    margin-left: 2vw;
-}
-  
-.back-01{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font: italic 30px var(--fonte01);
-    height: 350px;
-    width: 100%;
-    background: linear-gradient(45deg, #fff, #F2F2F2, #D9D9D9, #A6A6A6);
-    background-size: 300% 300%;
-    animation: colors 10s ease infinite;
-    box-shadow: inset 2px 2px 10px 0px rgba(0, 0, 0, 0.123);
-}
-
-@keyframes colors{ 
-    0%{
-        background-position: 0% 50%;
-    }
-
-    50%{
-        background-position: 100% 50%;
-    }
-
-    100%{
-        background-position: 0% 50%;
-    }
+header{
+    background-image: url(../lemniscata/imagens/a1\ -\ Copy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    font-weight: bold;
+    height: 14vh;
 }
 
 .menu{
-    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 6px;
 }
 
-.header{   /* Letras do primeiro back */
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--fonte01);
-    color: #0d0d0d;
-    text-align: center;
-  }
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-#head1, #head2,#head3, #head4, #head5{
-    opacity: 0;
+.menu a:hover{
+    text-decoration: underline;
+    transition: 1s;
 }
-  
-#head1{
-    -webkit-animation: fadeOut 1 5s ease-in;
-    -moz-animation: fadeOut 1 5s ease-in;
-    -o-animation: fadeOut 1 5s ease-in;
-    animation: fadeOut 1 5s ease-in;
+
+#apresentacao{
+    height: 80vh;
+    background-image: url(../lemniscata/imagens/a1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-  
-#head2{
-    -webkit-animation: fadeOut 1 5s ease-in;
-    -moz-animation: fadeOut 1 5s ease-in;
-    -o-animation: fadeOut 1 5s ease-in;
-    animation: fadeOut 1 5s ease-in;
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    animation-delay: 6s;
-}
-  
-  #head3{
-    -webkit-animation: fadeOut 1 5s ease-in;
-    -moz-animation: fadeOut 1 5s ease-in;
-    -o-animation: fadeOut 1 5s ease-in;
-    animation: fadeOut 1 5s ease-in;
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    animation-delay: 12s;
-}
-  
-  #head4{
-    -webkit-animation: fadeOut 1 5s ease-in;
-    -moz-animation: fadeOut 1 5s ease-in;
-    -o-animation: fadeOut 1 5s ease-in;
-    animation: fadeOut 1 5s ease-in;
-    -webkit-animation-delay: 17s;
-    -moz-animation-delay: 17s;
-    -o-animation-delay: 17s;
-    animation-delay: 17s;
-}
-  
-#head5{
-    -webkit-animation: finalFade 1 5s ease-in;
-    -moz-animation: finalFade 1 5s ease-in;
-    -o-animation: finalFade 1 5s ease-in;
-    animation: finalFade 1 5s ease-in;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    -o-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    -webkit-animation-delay: 22s;
-    -moz-animation-delay: 22s;
-    -o-animation-delay: 22s;
-    animation-delay: 22s;
-}
-  
-@-webkit-keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-  
-@-moz-keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-  
-@-o-keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-  
-@keyframes fadeIn{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
-  
-@-webkit-keyframes fadeOut{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 0;}
-}
-  
-@-moz-keyframes fadeOut{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 0;}
-}
-  
-@-o-keyframes fadeOut{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 0;}
-}
-  
-@keyframes fadeOut{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 0;}
-}
-  
-@-webkit-keyframes finalFade{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 1;}
-}
-  
-@-moz-keyframes finalFade{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 1;}
-}
-  
-@-o-keyframes finalFade{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 1;}
-}
-  
-@keyframes finalFade{
-    0%{opacity: 0;}
-    30%{opacity: 1;}
-    80%{opacity: .9;}
-    100%{opacity: 1;}
-  }
+

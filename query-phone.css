@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@media screen and  (max-width: 766px) { /* até 766 é cel */
+
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    body{
+        background-color: #ffffff;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #burguer{
+        background-color: #000000;
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+    
+    #burguer:hover{
+        background-color: #000000de;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    nav > ul {
+        list-style-type: none;
+    }
+    
+    nav > ul > li > a { /* OU APENAS ( menu a {} ) */
+        background-color: #121213;
+        color: rgb(255, 255, 255);
+        display: block;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        border-top: 2px solid #313133;
+    }
+    
+   nav > ul > li > a:hover { /* OU APENAS ( menu a:hover {} ) */
+        background-color: #202022;
+    }
+}
